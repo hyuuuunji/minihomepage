@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2021 MINI HOMEPAGE</title>
+    <link rel="stylesheet" href="./static/layout.css" />
+    <link rel="stylesheet" href="./static/font.css"/>
+    <link rel="stylesheet" href="./static/diary.css"/>
+  </head>
+  <body>
+    <div class="bookcover">
+      <div class="bookdot">
+        <div class="page">
+          <div class="profile-container">
+            <div class="header profile-title font-neo">  
+              TODAY<span class="color-red"> 22</span> | TOTAL 2234810
+            </div>
+            <div class="box profile-box">
+              <div class="profile-image">
+                <img
+                  class="profile-image-img"
+                  src="./static/images/profile.jpg"
+                  alt="프로필 이미지"/>
+              </div>
+              <div class="profile-text font-kyobohand">
+                하고 싶은 거 다하고 싶은 횬징의 <br>미니홈피
+              </div>
+              <div class="profile-username font-kyobohand">
+                  <span style="color: #0f1b5c">횬징</span> 'ڡ'४ 
+              </div>
+              <!--파도타기-->
+                <div class="profile_dropdown">
+                  <div class="dropdown_btn">
+                    <div class="dropdown_title">파도타기</div>
+                    <div class="triangle_down"></div>
+                  </div>
+                  <div class="dropdown_content">
+                    <a href="https://blog.naver.com/thmam123" target="_blank"> 블로그로 가기</a>
+                    <a href="https://www.instagram.com/hyonzii" target="_blank">인스타그램으로 가기</a>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="header content-title">
+              <div class="content-title-name">횬징의 추억 상ㅈr...♥ ʕ•ﻌ•ʔ ♡</div>
+              <div class="content-title-url">https://url주소/나중에입력</div>
+            </div>
+            <div class="box content-box">
+              <div class="diary-title">Diary</div>
+              <div class="date-box font-neo">
+                <div class="today">01.03<br> MON</div>
+              <div class="date-list">
+                <div class="date"><span class="color-red">1</span></div>
+                <div class="date">2</div>
+                <div class="date">3</div>
+                <div class="date">4</div>
+                <div class="date">5</div>
+                <div class="date">6</div>
+                <div class="date">7</div>
+                <div class="date">8</div>
+                <div class="date">9</div>
+                <div class="date">10</div>
+                <div class="date">11</div>
+                <div class="date">12</div>
+                <div class="date"><span class="color-purple">13</span></div>
+                <div class="date">14</div>
+                <div class="date"><span class="color-yellow">15</span></div>
+                <div class="date"><span class="color-yellow">16</span></div>
+                <div class="date">17</div>
+                <div class="date">18</div>
+                <div class="date">19</div>
+                <div class="date">20</div>
+                <div class="date">21</div>
+                <div class="date">22</div>
+                <div class="date">23</div>
+                <div class="date">24</div>
+                <div class="date">25</div>
+                <div class="date"><span class="color-green">26</span></div>
+                <div class="date">27</div>
+                <div class="date">28</div>
+                <div class="date">29</div>
+                <div class="date">30</div>
+                <div class="date">31</div>
+              </div>
+            </div>
+             <div class="scroll-box">
+               <div class="diary-box">
+                 <div class="diary-date">2022.01.03 월 2:40</div>
+                    <div class="diary-text">모각코 10일차!!<br> 
+                                            이제 얼마 안남았다!!
+                                           <br>힘내서 마무리 잘하자!!
+                    </div>
+               </div>
+
+               <div class="diary-box">
+                <div class="diary-date">2022.01.05 수 11:40</div>
+                   <div class="diary-text">지금 먹고 싶은 음식<br> 
+                                          떡볶이<br>
+                                          곱창 <br>
+                                          설빙 딸기빙수 <br>
+                                          뿌링클 
+                                          <br>
+                                          <br>
+                                          다이어트는 내일부터!!</div>
+                  </div>
+
+                  <div class="diary-box">
+                    <div class="diary-date">2022.01.15 토 19:26</div>
+                       <div class="diary-text">2022 새해 목표<br> 
+                                               1. 운동 꾸준히 하기 <br>
+                                               2. 한달에 책 한권 읽기 <br>
+                                               3. 코딩 꾸준히 하기 <br>
+                                               4. 여행가기 <br>
+                                               5. 정처기 자격증 따기 <br>
+                       </div>
+                  </div>
+                  
+                  <div class="button-box">
+                    <button class="diary-button">
+                      <i class="fas fa-lock"></i>횬징의 비밀일기 보기
+                    </button>
+                  </div>
+                  <div class="diary-box" id="secret-box">
+                    <div class="diary-date">횬징의 비밀일기 보기</div>
+                    <div class="diary-text font-koybohand" id="secret-diary"></div>
+                  </div>
+               </div>
+          </div>
+        </div>
+
+          <div class="menu-container">
+            <a href="./index.html">홈</a>
+            <a href="./diary.html">다이어리</a>
+            <a href="./pic.html">사진첩</a>
+            <a href="./guest.html">방명록</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        function getTextFile() {
+          var input = document.createElement("input");
+          input.type = "file";
+          input.accept = "text/plain";
+          input.onchange = function (event) {
+            processFile(event.target.files[0]);
+          };
+          input.click();
+        }
+
+        function processFile(file) {
+          var reader = new FileReader();
+          reader.readAsText(file, "utf-8");
+
+          reader.onload = function() {
+            document.getElementById("secret-diary").innerText = reader.result;
+            document.getElementById("secret-box").style.display = "block";
+          };
+        }
+      </script>
+  </body>
+</html>  

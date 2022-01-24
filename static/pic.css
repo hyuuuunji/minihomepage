@@ -1,0 +1,35 @@
+.content-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+
+
+.photo-title{
+  font-size: 14px;
+  padding: 0.5em;
+  font-family: "NeoDunggeunmo";
+  padding-left: 1em;
+  background-color: #eeeeee;
+  color: black;
+}
+
+
+.photo {
+  display: block;
+  margin: 0px auto;
+}
+
+.pic-title {
+  font-family: "KOTRA_BOLD-Bold";
+  color: #95b2f0;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+
+
+
+

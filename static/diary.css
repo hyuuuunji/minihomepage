@@ -1,0 +1,120 @@
+.diary-title {
+    font-family: "KOTRA_BOLD-Bold";
+    color: #95b2f0;
+  }
+
+.content-box {
+  position: relative;
+}
+
+.date-box {
+  position: absolute;
+  top: 40px;
+  left: 15px;
+  right: 15px;
+  height: 3rem;
+
+  border: 1px solid #e7e7e7;
+
+  display: flex;
+  align-items: center;
+}
+
+.date-box >.today {
+  flex: 0 0 3rem;
+  margin-left: 2px;
+  text-align: left;
+  color: #b1b6c0;
+  font-weight: 700;
+}
+
+.date-list {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: center; /*교차축(반대축) 기준으로 아이템 배치*/
+}
+
+.date {
+  flex:  0 0 1.5rem;
+  color: #707070;
+  cursor: pointer;
+  text-align: center;
+}
+
+.scroll-box {
+  position: absolute;
+  margin-top: 5rem;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  overflow: auto;
+}
+
+.diary-box {
+  border: 1px solid #e7e7e7;
+  padding: 1.5rem;
+  margin-top: 15px;
+  margin-bottom: 2rem;
+}
+
+.diary-date {
+  font-size: 0.8rem;
+  color: #3b87ab;
+  margin-bottom: 1rem;
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+}
+
+.button-box > .diary-button {
+      margin-top: 1rem;
+      background-color: #fff;
+      color: #fff;
+      padding: 1rem;
+      cursor: pointer;
+
+      transition: 800ms ease all;
+      border: none;
+}
+
+.diary-button:hover {
+  background: #cda1f7;
+  color: #fff;
+}
+
+.fas {
+  margin-right: 0.5rem;
+  font-size: 0.5rem;
+}
+
+
+#secret-box {
+  display: none;
+}
+
+
+.color-red {
+  color: red;
+}
+.diary-text {
+  text-align: center;
+}
+
+
+.color-purple {
+  color: #8323e9;
+}
+
+.color-yellow {
+  color: #ffe711;
+}
+
+.color-green {
+  color: #94ce7a;
+}
+
+
